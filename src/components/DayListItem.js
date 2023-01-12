@@ -5,9 +5,9 @@ import classNames from "classnames";
 export default function DayListItem(props) {
 
   let dayClass = classNames('day-list__item', {
-    '--selected': props.selected,
-    '--full': props.spots === 0
-  }).replaceAll(' ', '');
+    'day-list__item--selected': props.selected,
+    'day-list__item--full': props.spots === 0
+  });
 
   const formatSpots = (spots) => {
     if (spots === 0) {
