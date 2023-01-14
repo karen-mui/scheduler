@@ -4,22 +4,6 @@ import "components/Application.scss";
 import DayList from "./DayList";
 import "components/Appointment";
 import Appointment from "components/Appointment";
-//   {
-//     id: 1,
-//     name: "Monday",
-//     spots: 2,
-//   },
-//   {
-//     id: 2,
-//     name: "Tuesday",
-//     spots: 5,
-//   },
-//   {
-//     id: 3,
-//     name: "Wednesday",
-//     spots: 0,
-//   },
-// ];
 
 const appointments = {
   "1": {
