@@ -34,8 +34,6 @@ export default function Form(props) {
     props.onCancel();
   };
 
-console.log ('student:', props.student, 'interviewer', props.interviewer)
-
   return (
     <main className="appointment__card appointment__card--create">
       <section className="appointment__card-left">
