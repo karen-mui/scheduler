@@ -36,15 +36,15 @@ export function getInterviewersForDay(state, day) {
 }
 
 export function getInterview(state, interview) {
-  let interviewerObj = {};
-  if (interview == null) {
+  if (!interview) {
     return null;
   }
-  for (let interviewer in state.interviewers) {
-    if (state.interviewers[interviewer].id === interview.interviewer) {
-      interviewerObj = interview;
-      interviewerObj.interviewer = state.interviewers[interviewer];
-    }
-  }
+  let interviewerObj = {student: interview.student, interviewer: state.interviewers[interview.interviewer]};
+  // for (let interviewer in state.interviewers) {
+  //   if (state.interviewers[interviewer].id === interview.interviewer) {
+  //     interviewerObj.student = interview.student;
+  //     interviewerObj.interviewer = state.interviewers[interviewer];
+  //   }
+  // }
   return interviewerObj;
 };
