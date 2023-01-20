@@ -87,15 +87,12 @@ export default function useApplicationData() {
   function spotsUpdate(weekday, day, action, id, appointments) {
     let spot = day.spots;
     if (weekday === day.name && action === "REMOVE_SPOT" && appointments[id].interview !== null) {
-      console.log('abc');
       return spot
     }
     if (weekday === day.name && action === "REMOVE_SPOT" && appointments[id].interview === null) {
-      console.log('def')
       return spot - 1
     }
     if (weekday === day.name && action === "ADD_SPOT" && appointments[id].interview !== null) {
-      console.log('xyz')
       return spot + 1
     }
   }
