@@ -20,17 +20,21 @@ Interview Scheduler is a SPA (Single Page Application) for tracking students int
 - When the user presses the close button of the error they are returned to the Form or Show view (skipping Status and Confirm).
 - The application makes API requests to load and persist data. We do not lose data after a browser refresh.
 
+### Daily View
 !["Daily View"](https://github.com/karen-mui/scheduler/blob/master/docs/Daily%20View%20(Deleted%20Appointment).png?raw=true)
-_The user clicks on the left panel to slect a different day of the week. When clicked, the appointment slots for that weekday will show.
+The user clicks on the left panel to slect a different day of the week. When clicked, the appointment slots for that weekday will show.
 
+### Form for Creating or Editing
 !["Form for Editing or Creating"](https://github.com/karen-mui/scheduler/blob/master/docs/Edit%20Form.png?raw=true)
-_The user can edit or add a new appointment. This is the form.
+The user can edit or add a new appointment. This is the form.
 
+### Cancellation Confirmation
 !["Cancellation Confirmation"](https://github.com/karen-mui/scheduler/blob/master/docs/Delete%20Confirmation.png?raw=true)
-_If the user chooses to delete an appointment, a confirmation sign will appear.
+If the user chooses to delete an appointment, a confirmation sign will appear.
 
+### Updated View after Appointment Change
 !["Updated View after Appointment Change"](https://github.com/karen-mui/scheduler/blob/master/docs/Daily%20View%20(Deleted%20Appointment).png?raw=true)
-_Once saved or deleted, the appointment spot will appear blank and the "spots remaining" indicator on the left panel will be updated accordingly.
+Once saved or deleted, the appointment spot will appear blank and the "spots remaining" indicator on the left panel will be updated accordingly.
 
 ## Setup
 
