@@ -71,6 +71,7 @@ export default function useApplicationData() {
           spots: spotsUpdate(weekday, day, action, id, appointments)
         }
       })
+      console.log(updatedStatesArray)
       return updatedStatesArray
     }
     if (action === "ADD_SPOT") {
@@ -80,6 +81,7 @@ export default function useApplicationData() {
           spots: spotsUpdate(weekday, day, action, id, appointments)
         }
       })
+      console.log(updatedStatesArray)
       return updatedStatesArray
     }
   }
@@ -88,12 +90,12 @@ export default function useApplicationData() {
     let spot = day.spots;
     if (weekday === day.name && action === "REMOVE_SPOT" && appointments[id].interview !== null) {
       return spot
-    }
-    if (weekday === day.name && action === "REMOVE_SPOT" && appointments[id].interview === null) {
+    } else if (weekday === day.name && action === "REMOVE_SPOT" && appointments[id].interview === null) {
       return spot - 1
-    }
-    if (weekday === day.name && action === "ADD_SPOT" && appointments[id].interview !== null) {
+    } else if (weekday === day.name && action === "ADD_SPOT" && appointments[id].interview !== null) {
       return spot + 1
+    } else {
+      return spot
     }
   }
 
